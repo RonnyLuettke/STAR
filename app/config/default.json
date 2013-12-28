@@ -1,0 +1,14 @@
+{
+  "debug": true,
+  "mode": "development",
+  "database": {
+    "default_db": "default",
+    "default": {
+      "dbms": "mysql",
+      "host": "127.0.0.1:3306",
+      "schema": "some_db",
+      "username": "user",
+      "password": "pass"
+    }
+  }
+}

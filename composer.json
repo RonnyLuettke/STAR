@@ -1,0 +1,22 @@
+{
+    "name": "luettke/star",
+    "description": "star",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ronny Lüttke",
+            "email": "ronny.luettke@gmx.de"
+        },
+        {
+            "name": "Stefan Lüttke",
+            "email": "stefan.luettke@gmx.de"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.4.*",
+        "slim/views": "*",
+        "twig/twig": "1.15.*",
+        "php-activerecord/php-activerecord": "1.1.*"
+    }
+}

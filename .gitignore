@@ -1,0 +1,6 @@
+#netbeans specific
+nbproject/*
+
+#exclude composer
+composer.lock
+vendor/*
