@@ -22,7 +22,9 @@ class App {
    * @return callable
    */
   public static function call($controller, $method){
-    if(is_string($controller)) $controller = new $controller();
+    if(is_string($controller)) {
+      $controller = new $controller();
+    }
     return array($controller, $method);
   }
     /**
