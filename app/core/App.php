@@ -1,5 +1,7 @@
 <?php
 
+namespace Star;
+
 class App {
 
   /**
@@ -9,17 +11,6 @@ class App {
    */
   public static function slim() {
     return \Slim\Slim::getInstance();
-  }
-
-  /**
-   * Calls the render method of the default Slim App
-   *
-   * @param $template
-   * @param array $data
-   * @param null $status
-   */
-  public static function render($template, $data = array(), $status = null) {
-    self::slim()->render($template, $data, $status);
   }
 
   /**

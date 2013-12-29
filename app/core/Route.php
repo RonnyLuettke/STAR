@@ -1,5 +1,7 @@
 <?php
 
+namespace Star;
+
 /**
  * Description of Route
  *

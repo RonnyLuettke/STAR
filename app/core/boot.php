@@ -1,11 +1,12 @@
 <?php
+require_once 'exceptions.php';
 require_once 'helpers.php';
 require_once 'autoloader.php';
 require_once base_path('vendor/autoload.php');
 
 new Slim\Slim(array(
-  'debug'          => Config::get('debug',false),
-  'mode'           => Config::get('mode','productive'),
+  'debug'          => Star\Config::get('debug',false),
+  'mode'           => Star\Config::get('mode','productive'),
   'view'           => new Slim\Views\Twig(),
   'templates.path' => base_path('views')
 ));
@@ -17,4 +18,4 @@ ActiveRecord\Config::initialize(function(ActiveRecord\Config $cfg) {
 
 require_once app_path('routes.php');
 
-App::run();
+Star\App::run();

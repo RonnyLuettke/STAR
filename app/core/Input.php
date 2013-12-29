@@ -1,5 +1,7 @@
 <?php
 
+namespace Star;
+
 class Input {
 
   /**

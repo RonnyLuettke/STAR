@@ -1,5 +1,7 @@
 <?php
 
+namespace Star;
+
 /**
  * Description of Config
  *
@@ -16,7 +18,7 @@ class Config {
     if(self::$confName != $config) {
       $filename = app_path("config/$config.json");
       if (!file_exists($filename)) {
-        throw new \ErrorException("config file '$filename' not found");
+        throw new \FileNotFoundException("config file '$filename' not found");
       }
       
       $json = file_get_contents($filename);
